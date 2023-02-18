@@ -14,7 +14,7 @@ If any input is not in valid format, highlights and shows error message.
 # Country Select
 Country select field uses async function to fetch country list api data and show list of countries in alphabetical order.
 
-#Password
+# Password
 Checks if password is in valid format and if matches with Confirm Password field:
 - At least one capital letter
 - At least one lowercase letter

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Form Validation</title>
+    </head>
+    <body>
+
+        <form class="form" id="form">
+
+            <div class="form-element">
+                <label for="username">Pick Username:</label>
+                <input type="text" placeholder="Create username" id="username" minlength="4">
+                <span class="error-message">Invalid username</span>
+            </div>
+
+            <div class="element-wrapper">
+            <div class="form-element first-name">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="" id="name">
+                <span class="error-message">Missing name</span>
+            </div>
+
+            <div class="form-element last-name">
+                <label for="lastname">Lastname:</label>
+                <input type="text" placeholder="" id="lastname">
+                <span class="error-message">Missing lastname</span>
+            </div>
+            </div>
+
+            <div class="form-element">
+                <label for="country">Select Your Country:</label>
+                <select name="country" id="country">
+                </select>
+                <span class="error-message">Please select country of residence</span>
+            </div>
+
+            <div class="form-element">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="yourmail@mail.com" id="email">
+                <span class="error-message">Invalid email address</span>
+            </div>
+
+            <div class="element-wrapper">
+            <div class="form-element">
+                <label for="password">Password:</label>
+                <input type="password" placeholder="" id="password">
+                <span class="error-message">Invalid password format</span>
+            </div>
+
+            <div class="form-element">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" placeholder="" id="confirm-password">
+                <span class="error-message">Invalid matching password</span>
+            </div>
+            </div>
+
+            <div class="form-element">
+                <p>Terms of Use:</p>
+                <input type="checkbox" id="confirm-terms">
+                <label for="confirm-terms">I accept Terms of Use</label>
+                <span class="error-message">You have to accept Terms of Use before registering.</span>
+            </div>
+
+            <button class="submit">Submit</button>
+        </form>
+       
+        <div class="form-submit">
+            <p>Form Submited!<br>Thank You for Registering!</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

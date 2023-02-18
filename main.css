@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+.form {
+    background-color: #00B295;
+    width: 420px;
+    padding: 20px 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 178, 149, 1);
+}
+
+.form-element {
+    background-color: #C9DAEA;
+    color: #191516;
+    border-radius: 10px;
+    margin: 20px 5px;
+    padding: 0 10px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.75);
+}
+
+.form-element label {
+    display: block;
+}
+
+.form-element input {
+    height: 30px;
+    width: 100%;
+    max-width: 300px;
+    padding-left: 5px;
+}
+
+.element-wrapper {
+    display: flex;
+}
+
+.element-wrapper > .form-element {
+    margin: 0 5px;
+}
+
+.form-element #confirm-terms {
+    width: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form-element #confirm-terms + label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form-element .error-message {
+    display: block;
+    font-size: 14px;
+    visibility: hidden;
+}
+
+.form-element.error .error-message {
+    visibility: visible;
+    color: #9A031E;
+    font-size: 14px;
+}
+
+.form-element.error input {
+    border-color: red;
+}
+
+.form-element.valid .error-message {
+    visibility: hidden;
+}
+
+.form-element.valid input {
+    border-color: green;
+}
+
+.submit {
+    width: 150px;
+    height: 40px;
+    border-color: #00B295;
+    border-radius: 20px;
+    background-color: white;
+    color: #00B295;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.form-submit {
+    width: 300px;
+    height: 100px;
+    background-color: #AB2346;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px rgba(171, 35, 70, 0.75);
+    position: absolute;
+    opacity: 0;
+}
+
+.form-submit p {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.form-submit.success {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
